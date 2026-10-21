@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: face-up-logistics
+    runtime: static
+    plan: free
+    staticPublishPath: ./
+    buildCommand: ""
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: sameorigin
